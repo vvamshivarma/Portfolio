@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vamshi Varma Vitrouthu – Portfolio</title>
+  <meta name="description" content="Portfolio of Vamshi Varma Vitrouthu – Mechatronics & Cyber-Physical Systems." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0d6efd;
+      --bg-soft:#f8fafc;
+    }
+    body{scroll-behavior:smooth}
+    .navbar-brand b{letter-spacing:.4px}
+    .hero{
+      background: radial-gradient(1200px 500px at 10% 10%, rgba(13,110,253,.12), transparent 60%),
+                  radial-gradient(1200px 500px at 90% 0%, rgba(25,135,84,.10), transparent 60%),
+                  linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+      padding: 7rem 0 4rem;
+    }
+    .avatar{
+      width: 120px; height:120px; border-radius:50%; object-fit:cover;
+      box-shadow:0 10px 30px rgba(13,110,253,.25);
+    }
+    .shadow-soft{ box-shadow:0 10px 30px rgba(0,0,0,.06) }
+    .section-title{ font-weight:800; letter-spacing:.2px }
+    .chip{ border:1px solid rgba(13,110,253,.2); padding:.4rem .7rem; border-radius:50rem; display:inline-flex; gap:.4rem; align-items:center; background:#fff }
+    .timeline{ position:relative;}
+    .timeline::before{ content:""; position:absolute; left:12px; top:.25rem; bottom:.25rem; width:2px; background:linear-gradient(#e9ecef,#ced4da);} 
+    .t-item{ position:relative; padding-left:2.5rem; margin-bottom:1.25rem }
+    .t-item::before{ content:""; position:absolute; left:6px; top:.6rem; width:14px; height:14px; border-radius:50%; background:#fff; border:3px solid var(--brand); box-shadow:0 0 0 3px #fff}
+    .badge-skill{ background:rgba(13,110,253,.08); color:#0b5ed7; border:1px solid rgba(13,110,253,.2) }
+    .list-dot li{ margin-bottom:.4rem }
+    .list-dot li::marker{ color:#0d6efd }
+    .card-hov{ transition:transform .2s ease, box-shadow .2s ease }
+    .card-hov:hover{ transform:translateY(-3px); box-shadow:0 1rem 2rem rgba(0,0,0,.08) }
+    .footer{ background:#0b1220; color:#cbd5e1 }
+    .footer a{ color:#9ec5fe; text-decoration:none }
+    .social a{ width:42px; height:42px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:#fff; }
+    .social a i{ font-size:1.1rem }
+    .sticky-offset{ scroll-margin-top: 5rem }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#topNav" tabindex="0">
+  <!-- Navbar -->
+  <nav id="topNav" class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home"><span class="badge text-bg-primary">VV</span> <b>Vamshi Varma Vitrouthu</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <span class="badge rounded-pill text-bg-light border">Regensburg, Bavaria, Germany</span>
+          <h1 class="display-5 fw-bold mt-3">Mechatronics & Cyber‑Physical Systems</h1>
+          <p class="lead text-secondary">Graduate student focused on HMI, CAD/CAE, FEA, and cyber‑physical production. I design, simulate, and prototype mechanical systems for reliability and manufacturability.</p>
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-primary" href="mailto:vamshivarmavitrouthu@gmail.com"><i class="bi bi-envelope"></i> Email Me</a>
+            <a class="btn btn-outline-primary" href="tel:+4917669339550"><i class="bi bi-telephone"></i> +49 17669339550</a>
+            <a class="btn btn-outline-secondary" href="#contact"><i class="bi bi-chat-dots"></i> Quick Message</a>
+            <a class="btn btn-outline-dark" href="resume/Vamshi_Varma_Vitrouthu_CV.pdf" download><i class="bi bi-download"></i> Download CV</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center order-1 order-lg-2">
+          <img class="avatar mx-auto" src="https://api.dicebear.com/9.x/initials/svg?seed=Vamshi%20Varma%20Vitrouthu" alt="Profile avatar of Vamshi Varma Vitrouthu" />
+          <div class="mt-3 d-flex gap-2 justify-content-center social">
+            <a aria-label="Email" href="mailto:vamshivarmavitrouthu@gmail.com"><i class="bi bi-envelope"></i></a>
+            <a aria-label="Phone" href="tel:+4917669339550"><i class="bi bi-telephone"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5 sticky-offset">
+    <div class="container">
+      <h2 class="section-title h1">About</h2>
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-8">
+          <div class="p-4 bg-white rounded-4 shadow-soft">
+            <p class="mb-3">Hi! I’m <b>Vamshi Varma Vitrouthu</b>, a Mechatronics student at the Deggendorf Institute of Technology (since Sep 2024). I enjoy turning ideas into manufacturable designs—using SolidWorks and ANSYS to move from CAD to FEA and prototype validation. My recent work spans <b>HMI design</b>, <b>cyber‑physical production systems</b>, and <b>lightweight EV structures</b>.</p>
+            <ul class="list-unstyled row row-cols-1 row-cols-md-2 g-3 mb-0">
+              <li class="col"><span class="chip"><i class="bi bi-geo"></i> Regensburg, Bavaria</span></li>
+              <li class="col"><span class="chip"><i class="bi bi-translate"></i> Telugu, English, German (A2→B1)</span></li>
+              <li class="col"><span class="chip"><i class="bi bi-tools"></i> SolidWorks, ANSYS, GD&T</span></li>
+              <li class="col"><span class="chip"><i class="bi bi-code-slash"></i> MATLAB, Python</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-3">Interests</h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge text-bg-light border">Cooking (Indian)</span>
+              <span class="badge text-bg-light border">Bike riding</span>
+              <span class="badge text-bg-light border">Restoring bikes</span>
+              <span class="badge text-bg-light border">3D Printing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-5 bg-light sticky-offset">
+    <div class="container">
+      <h2 class="section-title h1">Education</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card card-hov h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="card-title mb-1">Deggendorf Institute of Technology</h5>
+                <span class="badge text-bg-primary">Since Sep 2024</span>
+              </div>
+              <p class="text-secondary mb-2">Master of Mechatronics and Cyber‑Physical Systems • Deggendorf, Bavaria</p>
+              <ul class="list-dot">
+                <li><b>Human‑Machine Interfaces:</b> BCI research, HMI evaluation, and HMI design for intelligent vehicles.</li>
+                <li><b>CPPS using AM (Case Study):</b> Designed a collapsible core for injection molding; CAD modeling and optimization; AM prototype; DfM & functional testing; demonstrated digital–physical connectivity.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-hov h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="card-title mb-1">Anurag University</h5>
+                <span class="badge text-bg-secondary">Sep 2020 – Jun 2024</span>
+              </div>
+              <p class="text-secondary mb-2">Bachelor of Mechanical Engineering • Hyderabad, Telangana</p>
+              <ul class="list-dot">
+                <li><b>CAD/CAM:</b> 3D CAD modeling, CSG/B‑rep, NC/CNC, process planning.</li>
+                <li><b>Finite Element Method:</b> Stiffness matrices, thermal/mechanical analysis, ISO‑parametric elements.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-5 sticky-offset">
+    <div class="container">
+      <h2 class="section-title h1">Experience</h2>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="timeline">
+            <div class="t-item">
+              <div class="card shadow-soft border-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <h5 class="mb-1">Design & Manufacturing – <span class="text-primary">Kryss Motors</span></h5>
+                    <span class="badge text-bg-light border">Jul 2023 – Feb 2024 • Hyderabad</span>
+                  </div>
+                  <ul class="list-dot mt-2">
+                    <li>Designed EV chassis & battery housing in SolidWorks, focusing on lightweight manufacturability.</li>
+                    <li>Performed FEA & thermal analyses in ANSYS for structural integrity under real‑world conditions.</li>
+                    <li>Applied GD&T/tolerance analysis; delivered drawings, test plans, and validation reports.</li>
+                    <li>Cross‑functional collaboration with mechanical, electrical & production teams.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="t-item">
+              <div class="card shadow-soft border-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <h5 class="mb-1">CNC Intern – <span class="text-primary">DLRL‑DRDO</span></h5>
+                    <span class="badge text-bg-light border">Jun 2023 – Jul 2023 • Hyderabad</span>
+                  </div>
+                  <ul class="list-dot mt-2">
+                    <li>Operated CNC (G/M‑code), optimized toolpaths, and applied DFMA principles.</li>
+                    <li>Hands‑on with tolerances, jigs & fixtures for accurate prototyping and assembly.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="t-item">
+              <div class="card shadow-soft border-0">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between flex-wrap gap-2">
+                    <h5 class="mb-1">Modeling & Simulation Intern – <span class="text-primary">Kryss Motors</span></h5>
+                    <span class="badge text-bg-light border">May 2023 – Jun 2023 • Hyderabad</span>
+                  </div>
+                  <ul class="list-dot mt-2">
+                    <li>Developed trellis frame for electric bikes; validated geometry under load.</li>
+                    <li>Structural optimization and prototype validation for lightweight integrity.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-3"><i class="bi bi-briefcase"></i> What I bring</h5>
+            <ul class="list-unstyled m-0 list-dot">
+              <li>CAD → FEA pipeline from concept to validated prototype.</li>
+              <li>DfM, GD&T, documentation, and structured test workflows.</li>
+              <li>Comfort collaborating across mechanical, electrical, and production teams.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects & Publications -->
+  <section id="projects" class="py-5 bg-light sticky-offset">
+    <div class="container">
+      <h2 class="section-title h1">Projects & Publications</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 card-hov">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="card-title">Design & Analysis of Liquid Hydrogen Storage Tank</h5>
+                <span class="badge text-bg-info">IJERT • 2024</span>
+              </div>
+              <p>Modeled cryogenic tank assemblies in SolidWorks; material selection, GD&T, and thermal stress analysis. Conducted FEA & insulation testing in ANSYS leading to a peer‑reviewed publication.</p>
+              <ul class="list-dot">
+                <li>SolidWorks modeling of cryogenic assemblies</li>
+                <li>Thermal stress & insulation evaluation (ANSYS)</li>
+                <li>Publication: IJERT, Vol. 13, Issue 01, Jan 2024</li>
+              </ul>
+              <a class="link-primary" href="#" aria-disabled="true">Read paper (link coming soon)</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 card-hov">
+            <div class="card-body">
+              <h5 class="card-title">Collapsible Core for Injection Molding (CPPS + AM)</h5>
+              <p>Designed a collapsible core considering manufacturability and functional performance. Used CAD for geometric optimization and 3D printed a functional prototype to validate design and testing workflows.</p>
+              <span class="badge text-bg-secondary">Academic Case Study</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 sticky-offset">
+    <div class="container">
+      <h2 class="section-title h1">Skills</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded-4 shadow-soft">
+            <h5 class="fw-bold">CAD & CAM</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge badge-skill">SolidWorks</span>
+              <span class="badge badge-skill">Fusion 360</span>
+              <span class="badge badge-skill">AutoCAD</span>
+              <span class="badge badge-skill">Creo</span>
+              <span class="badge badge-skill">SolidCAM</span>
+            </div>
+            <hr/>
+            <h5 class="fw-bold">Analysis & Testing</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge badge-skill">ANSYS (FEA, Thermal)</span>
+              <span class="badge badge-skill">GD&T</span>
+              <span class="badge badge-skill">Prototyping (3D Printing)</span>
+              <span class="badge badge-skill">Measurement Validation</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold">Programming & Tools</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge badge-skill">MATLAB</span>
+              <span class="badge badge-skill">Python</span>
+              <span class="badge badge-skill">Office (Word/Excel/PowerPoint)</span>
+            </div>
+            <hr/>
+            <h5 class="fw-bold">Languages</h5>
+            <ul class="mb-0 list-dot">
+              <li>Telugu – Native</li>
+              <li>English – Fluent</li>
+              <li>German – Basic (A2), learning B1 at VHS, Germany</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light sticky-offset">
+    <div class="container">
+      <h2 class="section-title h1">Contact</h2>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card shadow-soft border-0">
+            <div class="card-body">
+              <h5 class="mb-3">Send a quick message</h5>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="jane@example.com" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Hi Vamshi, I'd like to connect..." required></textarea>
+                  </div>
+                  <div class="col-12 d-grid d-sm-flex gap-2">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-send"></i> Send</button>
+                    <a class="btn btn-outline-secondary" href="mailto:vamshivarmavitrouthu@gmail.com"><i class="bi bi-envelope"></i> Open in Email</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 bg-white rounded-4 shadow-soft h-100">
+            <h5 class="fw-bold mb-3">Direct</h5>
+            <p class="mb-2"><i class="bi bi-geo me-2"></i>Vitusstraße 2, Regensburg, Bavaria</p>
+            <p class="mb-2"><i class="bi bi-telephone me-2"></i><a href="tel:+4917669339550">+49 176 6933 9550</a></p>
+            <p class="mb-0"><i class="bi bi-envelope me-2"></i><a href="mailto:vamshivarmavitrouthu@gmail.com">vamshivarmavitrouthu@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div>© <span id="year"></span> Vamshi Varma Vitrouthu</div>
+      <div class="small">Built with HTML • CSS • JS • Bootstrap 5</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Portfolio enquiry from ' + name);
+      const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' (' + email + ')');
+      window.location.href = `mailto:vamshivarmavitrouthu@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
